@@ -19,7 +19,15 @@
             Console.WriteLine();
             numberPrinter.PrintNumber(1,3,4,5,100);
 
-            
+            int? age = 78;
+            if( age.HasValue )
+            {
+                Console.WriteLine($"\nAge is: {age.Value}");
+            }
+            else
+            {
+                Console.WriteLine("Age is not defined..");
+            }
         }
     }
 }
